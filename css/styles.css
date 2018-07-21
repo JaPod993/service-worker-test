@@ -216,9 +216,9 @@ nav h1 a {
   width: 100%;
 }
 .inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 95%;
+  /*bottom: 0;*/
+  /*position: absolute;*/
+  /*width: 95%;*/
 }
 #restaurant-name {
   color: #f18200;
@@ -231,7 +231,7 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-  width: 90%;
+  width: 75%;
   border-radius: 50px 0 0 0;
 }
 #restaurant-address {
@@ -248,7 +248,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 75%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -270,26 +270,35 @@ nav h1 a {
   padding-bottom: 1pt;
 }
 #reviews-list {
-  margin: 0 0 65px 0;
+  margin: 0;
   padding: 0;
 
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+    /*border: 2px solid #f3f3f3;*/
   display: block;
   list-style-type: none;
   overflow: hidden;
-  padding: 0 20px 20px;
+  /*padding: 0 20px 20px;*/
   position: relative;
   width: 85%;
   margin: 0 auto 30px auto;
+  -webkit-box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
+  -moz-box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
+  box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
+  border-radius: 0 0 16px 0;
 }
 #reviews-list li p {
   margin: 0 0 10px;
+  padding: 0 20px;
 }
 #restaurant-hours td {
   color: #666;
+}
+
+#restaurant-hours {
+  padding-bottom: 30px;
 }
 
 .header {
@@ -319,6 +328,59 @@ nav h1 a {
 
 #breadcrumb {
   /*width: 100%*/
+}
+
+.reviews-section-title {
+  background: #252831;
+  color: white;
+  color: #fff;
+  font-size: 14pt;
+  font-weight: 200;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.review-name,
+.review-date {
+  display: inline-block;
+  padding: 10px 20px!important;
+  margin: 0!important;
+}
+
+.review-name {
+  font-size: 24px;
+  color: white;
+}
+
+.review-date {
+  float: right;
+  font-size: 14px;
+  color: #c7c7c7;
+  padding-top: 22px!important;
+}
+
+.review-title {
+  background: #252831;
+  border-radius: 16px 0 0 0;
+}
+
+.rate-wrapp {
+  background-color: orange;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+.review-rate {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  margin: 0!important;
+  padding: 5px 20px!important;
 }
 
 @media screen and (max-width: 1200px) {
