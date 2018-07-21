@@ -78,6 +78,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
  */
 fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => {
   const hours = document.getElementById('restaurant-hours');
+  hours.focus();
   for (let key in operatingHours) {
     const row = document.createElement('tr');
 
