@@ -152,6 +152,9 @@ nav h1 a {
   display: inline-block;
   border-radius: 25px 0 0 0;
   padding-bottom: 15px;
+  -webkit-box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
+  -moz-box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
+  box-shadow: -16px 13px 60px -19px rgba(0,0,0,0.5);
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -187,7 +190,13 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 500ms ease;
 }
+
+#restaurants-list li a:hover {
+  background-color: #444;
+}
+
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
@@ -314,4 +323,29 @@ nav h1 a {
   #restaurants-list li {
     width: auto;
   }
+  .filter-title {
+    display: block;
+  }
+  .filter-options {
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .filter-options select {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 15px 0
+  }
+  .filter-options h2 {
+    padding-bottom: 15px;
+  }
+  .filter-options {
+    height: 145px;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
